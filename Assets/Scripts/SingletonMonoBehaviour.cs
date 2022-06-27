@@ -1,8 +1,15 @@
 using UnityEngine;
 
-public class SingletonMonoBehavior<T>:MonoBehaviour
+public class SingletonMonoBehavior<T> : MonoBehaviour
 {
+    #region Variables
+
     public static T Instance { get; private set; }
+
+    #endregion
+
+
+    #region Unity lyfecycle
 
     protected virtual void Awake()
     {
@@ -15,4 +22,6 @@ public class SingletonMonoBehavior<T>:MonoBehaviour
         Instance = GetComponent<T>();
         DontDestroyOnLoad(gameObject);
     }
+
+    #endregion
 }

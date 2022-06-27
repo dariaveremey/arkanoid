@@ -1,11 +1,13 @@
 using UnityEngine;
 
-
 public class Block : MonoBehaviour
 {
+    #region Viriables
+
     private int _numberStrikes;
     [SerializeField] private int _numberDestroy;
     [SerializeField] private int _points;
+
     [SerializeField] private float _firstCoefficient;
     [SerializeField] private float _secondCoefficient;
 
@@ -17,6 +19,11 @@ public class Block : MonoBehaviour
 
     private int _pointsNumber;
 
+    #endregion
+
+
+    #region Unity lifecycle
+
     private void OnCollisionEnter2D(Collision2D col)
     {
         _numberStrikes++;
@@ -25,11 +32,10 @@ public class Block : MonoBehaviour
         {
             _pointsNumber += _points;
             Destroy(gameObject);
-            Debug.Log( $"{_pointsNumber}");
-            
+            Debug.Log($"{_pointsNumber}");
         }
 
-        if (_numberStrikes== 1)
+        if (_numberStrikes == 1)
         {
             _firstChangedSpriteRenderer = Sprite.Create(_firstDestroySpriteTexture2D,
                 new Rect(0.0f, 0.0f, _firstDestroySpriteTexture2D.width, _firstDestroySpriteTexture2D.height),
@@ -44,7 +50,7 @@ public class Block : MonoBehaviour
                 new Vector2(0.5f, 0.5f), _secondCoefficient);
             GetComponent<SpriteRenderer>().sprite = _secondChangedSpriteRenderer;
         }
-        
-        
     }
+
+    #endregion
 }
