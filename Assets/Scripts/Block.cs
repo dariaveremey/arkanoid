@@ -30,7 +30,8 @@ public class Block : MonoBehaviour
 
         if (_numberStrikes == _numberDestroy)
         {
-            //_pointsNumber += _points;
+            //Привязать к событию?? 
+            //CurrentScore.Instance.ScoreNumber(_points);
             Destroy(gameObject);
             Debug.Log($"{_pointsNumber}");
         }
