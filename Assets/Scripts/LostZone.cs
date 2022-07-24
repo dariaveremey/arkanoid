@@ -9,7 +9,6 @@ public class LostZone : MonoBehaviour
     {
         if (collision.gameObject.TryGetComponent(out Ball ball))
         {
-            Destroy(ball.gameObject);
             RestartLevel();
         }
     }

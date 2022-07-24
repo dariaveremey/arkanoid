@@ -128,8 +128,8 @@ MonoBehaviour:
   _points: 8
   _firstCoefficient: 70
   _secondCoefficient: 70
-  _allySpriteTexture2D:
-  - {fileID: 2800000, guid: 3b093f11d1b9f4b4dad29f5706dcd963, type: 3}
-  - {fileID: 2800000, guid: 60b9baf23c5214eff979db2b137a2db9, type: 3}
   _firstDestroySpriteTexture2D: {fileID: 2800000, guid: 3b093f11d1b9f4b4dad29f5706dcd963, type: 3}
   _secondDestroySpriteTexture2D: {fileID: 2800000, guid: 60b9baf23c5214eff979db2b137a2db9, type: 3}
+  _destroyedSprites:
+  - {fileID: 21300000, guid: 3b093f11d1b9f4b4dad29f5706dcd963, type: 3}
+  - {fileID: 21300000, guid: 60b9baf23c5214eff979db2b137a2db9, type: 3}

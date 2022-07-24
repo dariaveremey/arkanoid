@@ -130,3 +130,6 @@ MonoBehaviour:
   _secondCoefficient: 140
   _firstDestroySpriteTexture2D: {fileID: 2800000, guid: 867a4fec287e04fc4a9b6b7b4d7b3f55, type: 3}
   _secondDestroySpriteTexture2D: {fileID: 2800000, guid: 25fff95bb29da4c8c9e46644cffe8d9b, type: 3}
+  _destroyedSprites:
+  - {fileID: 21300000, guid: 25fff95bb29da4c8c9e46644cffe8d9b, type: 3}
+  - {fileID: 21300000, guid: 867a4fec287e04fc4a9b6b7b4d7b3f55, type: 3}
